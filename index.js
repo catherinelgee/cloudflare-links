@@ -1,5 +1,5 @@
 const username = "catherinelgee"
-const profilePic = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fvectors%2Fblank-profile-picture-mystery-man-973460%2F&psig=AOvVaw0-8dxa3GlIP9iE8iyB2axE&ust=1602587761066000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOis5ub2ruwCFQAAAAAdAAAAABAD"
+const profilePic = "https://upload.wikimedia.org/wikipedia/commons/a/a4/Mandelbrot_sequence_new.gif"
 
 addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request))
@@ -10,9 +10,9 @@ addEventListener('fetch', event => {
  */
 async function handleRequest(request) {
   let response 
-  var links = [{ "name": "One", "url": "https://google.com" },
-              { "name": "Two", "url": "https://google.com" }, 
-              { "name": "Three", "url": "https://google.com" }]
+  var links = [{ "name": "Profile picture source", "url": "https://en.wikipedia.org/wiki/Fractal#/media/File:Mandelbrot_sequence_new.gif" },
+              { "name": "Fractal Video (that I made!)", "url": "https://www.youtube.com/watch?v=rit9KwyWoJ8" }, 
+              { "name": "Vote!", "url": "https://www.vote.org/" }]
 
   const path = request.url
   if (path.includes("/links")) {
